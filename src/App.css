@@ -1,0 +1,158 @@
+
+:root{
+  margin:0;
+  padding:0;
+  --primary:rgba(59,53,53,0.5);
+  --secodary:rgba(105,105,179,0.5);
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.navbar-nav{
+  margin-left: 70%;
+}
+.nav-item:hover{
+  color: #fff;
+  background-color: rgba(105,105,179);
+}
+.card{
+  border:none;
+  text-align: center;
+  background-color: #ffffff;
+  width:70%;
+
+}
+.jumbotron{
+  background:linear-gradient(135deg,var(--primary),var(--secodary)), url(../src/23.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 70vh;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.jumbotron p {
+  font-family: 'Open Sans', sans-serif;
+ 
+ 
+  font-size: 20px;
+  color: white;
+}
+.btn{
+  border-radius: 50px;
+  background-color: #b278A4;
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  border:none;
+}
+.box{
+  position: relative;
+  width:300px;
+  height: 350px;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0,0,0,.1);
+  margin:20px;
+  overflow: hidden;
+  text-align: center;
+}
+.box::before{
+  content: '';
+  width:50%;
+  height:100%;
+  position: absolute;
+  top:0;
+  left:0;
+  background: rgba(255,255,255,.2);
+  z-index: 2;
+  pointer-events: none;
+}
+.box .icon{
+  position: relative;
+  width:80px;
+  height: 80px;
+  color: #fff;
+  background: #000;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin:0 auto;
+  transition: 1s;
+  font-size: 40px;
+  font-weight: 700;
+}
+.box .content{
+  position: relative;
+  z-index:1;
+  transition: 0.5s;
+}
+.box:hover .content{
+  color: #fff;
+}
+.box p{
+  color:#000;
+}
+.box:nth-child(1):hover .icon{
+  color: #fff;
+  box-shadow: 0 0 0 400px #d6aac6;
+}
+.box:nth-child(1) .icon{
+  box-shadow: 0 0 0 0;
+  background: #d6aac6;
+}
+.box:nth-child(2):hover .icon{
+  color: #fff;
+  box-shadow: 0 0 0 400px #a05b82;
+}
+.box:nth-child(2) .icon{
+  box-shadow: 0 0 0 0;
+  background: #a05b82;
+}
+.box:nth-child(3):hover .icon{
+  color: #fff;
+  box-shadow: 0 0 0 400px #a01f62;
+}
+.box:nth-child(3) .icon{
+  box-shadow: 0 0 0 0;
+  background: skyblue;
+}
+.box .content p{
+  margin:0;
+  padding: 0;
+
+}
+.footer i{
+  padding-left: 12%;
+}
+footer h1{
+  font-family: 'Montserrat';
+}
+
+
+
+
+
+
+
+
+@media (max-width:986px){
+#logo{
+  width: 160px;
+}
+
+.navbar-nav{
+  margin-left: -0%;
+}
+
+}
