@@ -1,4 +1,8 @@
+.body{
+  justify-content: center;
+  align-items: center;
 
+}
 :root{
   margin:0;
   padding:0;
@@ -7,10 +11,15 @@
   box-sizing: border-box;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-
+.screenLoading{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
 
 .navbar-nav{
-  margin-left: 70%;
+  margin-left: 60%;
 }
 .nav-item:hover{
   color: #fff;
@@ -138,12 +147,89 @@
 footer h1{
   font-family: 'Montserrat';
 }
+.testimonyContainer{
+  width:1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+  grid-gap: 20px;
+  box-sizing: content-box;
+  padding:20px;
+}
+.testimonyContainer .testimonialBox{
+  position: relative;
+  padding:40px;
+  transition: 0.5s;
+  text-align: center;
+  color: #fff;
+  background: #a05b82;
+}
+.testimonyContainer .testimonialBox:hover{
+  background:#a05b82 ;
+}
+.testimonyContainer .testimonialBox p{
+  margin:0;
+  padding:0;
+  transition: 0.5s;
+}
+.testimonyContainer .testimonialBox h4{
+  margin:20px 0 0;
+  padding:0;
+  transition: 0.5s;
+  font-size: 18px;
+  color:#fff;
+  font-weight: 700;
+  line-height:20px;
+  text-transform: uppercase;
+}
+.testimonyContainer .testimonialBox h4 span{
+  font-weight: 600;
+  font-size:10px;
+  color:rgb(221, 215, 215);
+  transition: 0.5s;
+}
+.testimonyContainer .testimonialBox:hover p,
+.testimonyContainer .testimonialBox:hover h4,
+.testimonyContainer .testimonialBox:hover h4 span{
+  color: #fff;
+}
+.testimonyContainer .testimonialBox .imgBox{
+  position: absolute ;
+  top:-20px;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:100px;
+  height:100px;
+  border-radius:50%;
+  overflow: hidden;
+}
+.testimonyContainer .testimonialBox:before{
+  content: '';
+  position: absolute;
+  top:20px;
+  right:40px;
+  width:30px;
+  height: 30px;
+  background: url(../src/components/images/quotes.png);
+  background-size: cover;
+  opacity:70%;
+  pointer-events: none;
+  transform: translateY(-37px);
+}
 
-
-
-
-
-
+.testimonyContainer .testimonialBox:after{
+  content: '';
+  position: absolute;
+  bottom:20px;
+  left:40px;
+  width:30px;
+  height: 30px;
+  background: url(../src/components/images/quotes.png);
+  background-size: cover;
+  opacity:70%;
+  pointer-events: none;
+  transform:rotate(180deg) translateY(-37px);
+}
 
 
 @media (max-width:986px){
@@ -153,6 +239,13 @@ footer h1{
 
 .navbar-nav{
   margin-left: -0%;
+}
+.testimonyContainer{
+  width:1%;
+  margin-left: -5%;
+}
+.testimonyContainer .testimonialBox{
+  margin-top:80px;
 }
 
 }

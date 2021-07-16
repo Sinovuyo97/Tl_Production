@@ -1,3 +1,4 @@
+import React from "react";
 import Banner from "./banner"
 import capture from "C:/Users/Mlab/Desktop/Tl-Production/tl_productions/src/components/Capture.PNG"
 function NavigationBar() {
@@ -27,19 +28,19 @@ function NavigationBar() {
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#About">About us</a>
+          <a class="nav-link" href="#About">About Us</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#Services">Programms</a>
+          <a class="nav-link" href="#Services">Programmes</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#Gallery">Gallery</a>
+          <a class="nav-link" href="#testimonials">Successful Stories</a>
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="#Footer">Contact us</a>
+          <a class="nav-link" href="#Footer">Contact Us</a>
         </li>
             
         </ul>
